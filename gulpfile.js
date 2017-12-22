@@ -7,7 +7,14 @@ gulp.task('styles', function() {
         .pipe(gulp.dest('app/css'))
 });
 
-//Watch task
-gulp.task('default',function() {
-    gulp.watch('app/sass/**/*.scss',['styles']);
+gulp.task('watchCss',function(){
+
+    gulp.watch('app/scss/**/*.scss',['styles']);
 });
+
+//Watch task
+// gulp.task('default',function() {
+//     gulp.watch('app/scss/**/*.scss',['styles']);
+// });
+
+gulp.task('default', ['watchCss']);
