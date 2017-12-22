@@ -33,9 +33,9 @@ gulp.task('useref', function () {
         .pipe(gulp.dest('dist'))
 });
 
-gulp.task('task-name', function () {
-    // Stuff here
-});
+// gulp.task('task-name', function () {
+//     // Stuff here
+// });
 
 gulp.task('fonts', function () {
     return gulp.src('app/fonts/**/*')
