@@ -1,0 +1,28 @@
+// https://scotch.io/tutorials/how-to-use-sass-mixins
+@mixin full-screen {
+  :-webkit-full-screen a {
+    display: -webkit-box;
+    display: flex;
+  }
+
+  :-moz-full-screen a {
+    display: flex;
+  }
+
+  :-ms-fullscreen a {
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  :fullscreen a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@mixin flex {
+  // write the css here
+  display: -webkit-flex;
+  display: flex;
+}
